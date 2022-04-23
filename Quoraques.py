@@ -156,11 +156,11 @@ print ("Number of duplicate questions",(pair_duplicates).shape[0] - df_train.sha
 nan_rows = df_train[df_train.isnull().any(1)]
 print (nan_rows)
 
-!pip install tfidf
+import tfidf
 
-!pip install -U scikit-learn
+import -U scikit-learn
 
-!pip install sklearn
+import sklearn
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
