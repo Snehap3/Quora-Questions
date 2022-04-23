@@ -25,7 +25,7 @@ print('Total number of question pairs for training: {}'.format(len(df_train)))
 print('Duplicate pairs: {}%'.format(round(df_train['is_duplicate'].mean()*100, 2)))
 qids = pd.Series(df_train['qid1'].tolist() + df_train['qid2'].tolist())
 print('Total number of questions in the training data: {}'.format(len(
-    np.unique(qids))))
+    np.unique(qids)))) 
 print('Number of questions that appear multiple times: {}'.format(np.sum(qids.value_counts() > 1)))
 
 plt.figure(figsize=(12, 5))
