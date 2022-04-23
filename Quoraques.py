@@ -158,7 +158,7 @@ print (nan_rows)
 
 import tfidf
 
-import scikit-learn
+#import scikit-learn
 
 import sklearn
 
@@ -183,7 +183,7 @@ from sklearn.model_selection import train_test_split
 y = labels
 X_train,X_valid,y_train,y_valid = train_test_split(X,y, test_size = 0.33, random_state = 42)
 
-!pip install xgboost
+#!pip install xgboost
 
 import xgboost as xgb
 
@@ -203,7 +203,7 @@ print(classification_report(y_valid, xgb_prediction))
 print('word level tf-idf training score:', log_loss(y_train, xgb_model.predict(X_train)))
 print('word level tf-idf validation score:', log_loss(y_valid, xgb_model.predict(X_valid)))
 
-!pip install lightgbm
+#!pip install lightgbm
 
 import lightgbm as lgb
 
@@ -408,15 +408,7 @@ print('character level tf-idf training score:', f1_score(y_train, xgb_model.pred
 print('character level tf-idf validation score:', f1_score(y_valid, xgb_model.predict(X_valid), average='macro'))
 print(classification_report(y_valid, xgb_prediction))
 
-X
+#X
 
-SMOTE
-data cleaning
-improve labelling
-hyperparameter tuning- optuna...best parameters
-log loss score
-discussion:
-    
-1. cosine similarity
-2. Jaccard Index
+#SMOTEdata cleaningimprove labellinghyperparameter tuning- optuna...best parameterslog loss scorediscussion:1. cosine similarity2. Jaccard Index
 
