@@ -158,7 +158,7 @@ print (nan_rows)
 
 import tfidf
 
-import -U scikit-learn
+import scikit-learn
 
 import sklearn
 
