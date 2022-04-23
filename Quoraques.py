@@ -110,7 +110,7 @@ print(sorted(weights.items(), key=lambda x: x[1] if x[1] > 0 else 9999)[:10])
 print('\nLeast common words and weights: ')
 (sorted(weights.items(), key=lambda x: x[1], reverse=True)[:10])
 
-!pip install plotly
+#!pip install plotly
 
 import plotly.express as px
 
